@@ -1,10 +1,9 @@
 package lab1_3;
 
 public class Elf extends Character {
-    public CharacterConfig config;
 
-    public Elf(CharacterConfig conf) {
-        this.config = conf;
+    public Elf(CharacterConfig conf, String userName) {
+        super(conf, userName);
     }
 
     @Override

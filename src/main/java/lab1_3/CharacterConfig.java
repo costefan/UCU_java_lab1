@@ -1,5 +1,9 @@
 package lab1_3;
 
 public class CharacterConfig {
-    public static int power, healthPoints;
+    public int power, healthPoints;
+    public CharacterConfig(int power, int healthPoints) {
+        this.power = power;
+        this.healthPoints = healthPoints;
+    }
 }

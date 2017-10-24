@@ -1,10 +1,9 @@
 package lab1_3;
 
 public class Hobbit extends Character {
-    public CharacterConfig config;
 
-    public Hobbit(CharacterConfig conf) {
-        this.config = conf;
+    public Hobbit(CharacterConfig conf, String userName) {
+        super(conf, userName);
     }
     @Override
     public void kick(Character c) {

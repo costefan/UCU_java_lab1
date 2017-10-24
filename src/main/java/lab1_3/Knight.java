@@ -2,10 +2,9 @@ package lab1_3;
 
 public class Knight extends Character {
     KingBehaviour behaviour = new KingBehaviour();
-    public CharacterConfig config;
 
-    public Knight(CharacterConfig conf) {
-        this.config = conf;
+    public Knight(CharacterConfig conf, String userName) {
+        super(conf, userName);
     }
 
     @Override
