@@ -22,9 +22,14 @@ public class Runner {
         if (c1 == null || c2 == null)
             System.out.println("Finished");
         else {
-            System.out.println("Fight between " + c1 + " and " + c2);
 
-            new GameManager().fight(c1, c2);
+            try {
+                new GameManager().fight(c1, c2);
+
+                System.out.println("Fight between " + c1 + " and " + c2);
+            } catch (Exception exc) {
+                System.out.println(exc);
+            }
         }
     }
 }
